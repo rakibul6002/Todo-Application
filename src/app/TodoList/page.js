@@ -6,8 +6,8 @@ const page = () => {
         <div className='flex items-center justify-center '>
             <p className='text-3xl font-semibold mt-10'>Your Todo List</p>
         </div>
-        <div className='mt-10'>
-
+        <div className='flex items-center justify-center mt-10'>
+            <p>No Todos Available</p>
         </div>
     </div>
   )

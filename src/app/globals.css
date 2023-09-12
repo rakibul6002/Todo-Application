@@ -2,8 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.image{
-  background: url(../Images/bg.jpg);
-  background-size: cover;
-
-}
