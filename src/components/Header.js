@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import Logo from '../Images/logo.png';
 import React from 'react';
@@ -5,6 +6,7 @@ import Link from 'next/link';
 
 
 const Header = () => {
+
   return (
     <div>
         <div className='w-full h-20 bg-gray-900 text-gray-200 flex items-center justify-between'>
