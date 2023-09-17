@@ -1,15 +1,15 @@
 'use client'
-import { addTodo } from '@/Redux/todoSlice';
+import { addTodo, deleteTodo } from '@/Redux/todoSlice';
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { useDispatch, useSelector } from 'react-redux';
 import { MdDelete } from 'react-icons/md';
 
-const Todoin = () => {
+const TodoIn = () => {
     // const [todoarray,setTodoArray] = useState([]);
     const [todoInput,setTodoInput] = useState("");
       const {todosValue} = useSelector((state) => state.todo);
-      console.log(todosValue);
+      
 
       const dispatch = useDispatch();
     const saveTodo = (e) =>{
@@ -44,9 +44,9 @@ const Todoin = () => {
               <div className='flex items-center justify-center '>
                 <p className='text-4xl font-semibold'>ToDo Application</p>
               </div>
-              <div className='bg-gray-400 w-[500px] h-[300px] mx-auto mt-5 rounded'>
+              <div className='bg-gray-400 w-[500px] h-[300px] mx-auto mt-5 rounded flex flex-col items-center justify-center my-20'>
                 
-                <div className='flex flex-col items-center justify-center my-20 '>
+                
                   <input 
                       type="text" 
                       placeholder='Enter your text...' 
@@ -61,7 +61,6 @@ const Todoin = () => {
                   </button>
                 </div>
                   
-              </div>
           </div>
 
           <div className='w-[500px] mx-auto my-8'>
@@ -69,16 +68,18 @@ const Todoin = () => {
             <div className='flex flex-col items-center justify-center mt-8'>
                 {
                     todosValue.length > 0 ? (
-                        todosValue.map((item) => (
+                        todosValue?.map((item) => (
                             <p 
                             className='bg-gray-950 w-full text-gray-200 mt-3 px-4 py-2 rounded-md flex items-center justify-between'
                             key={item.id} >{item.text}
-                            <span className='text-2xl text-red-600 hover:text-white duration-200'>
+                            <span
+                            onClick={() => dispatch(deleteTodo(item.id))}
+                            className='text-2xl text-red-600 hover:text-white duration-200'>
                             <MdDelete />
                             </span>
                             </p>
                         ))
-                    ) :( <p>No todos Available</p> )
+                    ) :( <p>no todo</p> )
                 }
             </div>
           </div>
@@ -88,4 +89,4 @@ const Todoin = () => {
   )
 }
 
-export default Todoin
+export default TodoIn

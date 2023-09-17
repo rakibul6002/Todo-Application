@@ -20,12 +20,19 @@ import { createSlice } from "@reduxjs/toolkit";
                 }else{
                         state.todosValue = action.payload;
                 }
+            },
+            deleteTodo: (state,action) => {
+                state.todosValue = state.todosValue.filter((item)=>
+                
+                    item.id !== action.payload
+                );
+                
             }
         }
     });
 
 //export
 
-    export const {addTodo} = todoSlice.actions;
+    export const {addTodo,deleteTodo} = todoSlice.actions;
 
     export default todoSlice.reducer;
