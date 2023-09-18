@@ -6,8 +6,8 @@ const About = () => {
       <div className=' flex items-center justify-center'>
         <p className='mt-10 text-4xl border-b-2 text-gray-300 font-semibold'>About Us</p>
       </div>
-      <div className=' flex items-center justify-center'>
-      <p className='mt-32 text-4xl font-semibold'>WELCOME to our 'TODO APPLICATION'</p>
+      <div className=' flex items-center justify-center mt-32 text-4xl font-semibold'>
+        <p>WELCOME to our 'TODO APPLICATION'</p>
       </div>
     </main>
   )
