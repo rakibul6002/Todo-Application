@@ -27,6 +27,10 @@ const Header = () => {
                         <li className='hover:border-b-2 hover:border-red-600'>Home</li>
                     </Link>
 
+                    <Link href={'/About'}>
+                        <li className='hover:border-b-2 hover:border-red-600'>About</li>
+                    </Link>
+
                     <Link href={'/TodoIn'}>
                         <li className='hover:border-b-2 hover:border-red-600'>Todo In</li> 
                     </Link>
