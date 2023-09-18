@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div>
         <div className='w-full h-20 bg-gray-900 text-gray-200 flex items-center justify-between'>
-            <Link href={'/Home'}>
+            <Link href={'/'}>
                 <div className='mx-10 flex items-center justify-center cursor-pointer'>
                     <Image
                     src={Logo}
@@ -23,7 +23,7 @@ const Header = () => {
             </Link>
             <div>
                 <ul className='flex items-center justify-center gap-10 text-2xl cursor-pointer '>
-                    <Link href={'/Home'}>
+                    <Link href={'/'}>
                         <li className='hover:border-b-2 hover:border-red-600'>Home</li>
                     </Link>
 
@@ -44,6 +44,7 @@ const Header = () => {
                 <button>Sign Up</button>
             </div>
         </div>
+        
 
     </div>
   )

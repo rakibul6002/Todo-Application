@@ -79,7 +79,7 @@ const TodoIn = () => {
                             </span>
                             </p>
                         ))
-                    ) :( <p>no todo</p> )
+                    ) :( <p>No todos available...</p> )
                 }
             </div>
           </div>
