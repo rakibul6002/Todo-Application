@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.about{
-    background-image: url(../Images/todoin.jpg);
-    background: cover;
-}
