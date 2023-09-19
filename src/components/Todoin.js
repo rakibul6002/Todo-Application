@@ -36,13 +36,13 @@ const TodoIn = () => {
      
     };
   return (
-    <div>
+    <div className='w-full h-screen bg-bg-img bg-cover'>
 
-    <div className='h-auto  mt-40 w-full flex flex-col items-center justify-center'>
+    <div className='h-auto py-48 w-full flex flex-col items-center justify-center'>
 
           <div className='flex flex-col items-center justify-center '>
               <div className='flex items-center justify-center '>
-                <p className='text-4xl font-semibold'>ToDo Application</p>
+                <p className='text-4xl font-semibold text-gray-300'>ToDo Application</p>
               </div>
               <div className='bg-gray-400 w-[500px] h-[300px] mx-auto mt-5 rounded flex flex-col items-center justify-center my-20'>
                 
@@ -56,7 +56,7 @@ const TodoIn = () => {
                   />
                   <button 
                     onClick={saveTodo}
-                    className='mt-8 bg-green-700 text-4xl px-4 py-2 rounded-xl border-2 border-black hover:text-gray-300 duration-200 '>
+                    className='mt-8 bg-green-700 text-4xl px-4 py-2 rounded-xl border-2 border-black hover:text-gray-300 duration-300 '>
                     Add
                   </button>
                 </div>
@@ -64,7 +64,7 @@ const TodoIn = () => {
           </div>
 
           <div className='w-[500px] mx-auto my-8'>
-            <p className='flex items-center justify-center text-4xl font-semibold'>Your Todo</p>
+            {/* <p className='flex items-center justify-center text-4xl font-semibold'>Your Todo</p>
             <div className='flex flex-col items-center justify-center mt-8'>
                 {
                     todosValue.length > 0 ? (
@@ -81,7 +81,7 @@ const TodoIn = () => {
                         ))
                     ) :( <p>No todos available...</p> )
                 }
-            </div>
+            </div> */}
           </div>
           <Toaster />
     </div>
