@@ -44,7 +44,10 @@ const Header = () => {
                 </ul>
             </div>
             <div className='mx-10 cursor-pointer text-2xl flex items-center justify-center gap-3'>
+                <Link href={'/Log'}>
+
                 <button>Log In</button>
+                </Link>
                 <button>Sign Up</button>
             </div>
         </div>
