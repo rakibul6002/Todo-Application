@@ -7,8 +7,7 @@ const About = () => {
         <p className='mt-10 text-4xl border-b-2 text-gray-300 font-semibold'>About Us</p>
       </div>
      <div className='flex flex-col items-center justify-center mt-32  text-gray-300'>
-       <p className='text-3xl'>Welcome to our TODO APPLICATION...</p>
-       <p className='text-xl'>This is Todo Application.It's created by React JS.You can use this Web application and store your Todo.</p>
+       <p className='text-3xl'>Welcome to our TODO APPLICATION... This is Todo Application.It's created by React JS.You can use this Web application and store your Todo.</p>
      </div>
     </main>
   )
