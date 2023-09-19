@@ -8,6 +8,10 @@ const About = () => {
       </div>
      <div className='flex flex-col items-center justify-center mt-32  text-gray-300'>
        <p className='text-3xl'>Welcome to our TODO APPLICATION...</p>
+       <p className='text-xl mt-12'>This is Todo Application.</p>
+       <p className='text-xl'>It's created by React JS.</p>
+       <p className='text-xl'>You can use this Web application</p>
+       <p className='text-xl'>and store your Todo.</p>
      </div>
     </main>
   )
