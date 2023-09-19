@@ -7,7 +7,7 @@ const AllTodo = () => {
     const {todosValue} = useSelector((state) => state.todo);
     const dispatch= useDispatch();
   return (
-    <div className='w-[500px] mx-auto my-8 '>
+    <div className='w-[500px] mx-auto my-8  '>
         {
                     todosValue.length > 0 ? (
                         
@@ -21,7 +21,7 @@ const AllTodo = () => {
                                 </p>
                             ))
                         
-                    ) : ( <p className='flex items-center justify-center mx-auto text-xl font-semibold '>No todos available...</p> 
+                    ) : ( <p className='flex items-center justify-center mx-auto text-xl text-gray-400 font-semibold '>No todos available...</p> 
                     )}
     </div>
   )

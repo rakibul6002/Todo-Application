@@ -44,7 +44,7 @@ const TodoIn = () => {
               <div className='flex items-center justify-center '>
                 <p className='text-4xl font-semibold text-gray-300'>ToDo Application</p>
               </div>
-              <div className='bg-gray-400 w-[500px] h-[300px] mx-auto mt-5 rounded flex flex-col items-center justify-center my-20'>
+              <div className='bg-gray-400 w-[500px] h-[300px] mx-auto mt-10 rounded flex flex-col items-center justify-center my-20'>
                 
                 
                   <input 
