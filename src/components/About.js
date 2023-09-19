@@ -6,7 +6,7 @@ const About = () => {
       <div className=' flex flex-col items-center justify-center'>
         <p className='mt-10 text-4xl border-b-2 text-gray-300 font-semibold'>About Us</p>
       </div>
-     <div>
+     <div className='flex flex-col items-center justify-center mt-32'>
        <p>kuddus</p>
      </div>
     </main>
