@@ -2,7 +2,7 @@ import React from 'react'
 
 const H = () => {
   return (
-    <div className='w-full h-screen bg-bg-img bg-cover flex flex-col items-center justify-center'>
+    <div className='w-full min-h-screen bg-bg-img bg-cover flex flex-col items-center justify-center'>
         <div className='flex flex-col items-center justify-center '>
             <p className='text-4xl font-semibold text-gray-200  '>This is ToDo Application</p>
             <p className='mt-5 text-gray-200 text-xl'>You can store your ToDo</p>

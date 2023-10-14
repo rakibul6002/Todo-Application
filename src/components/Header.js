@@ -8,8 +8,8 @@ import Link from 'next/link';
 const Header = () => {
 
   return (
-    <div>
-        <div className='w-full h-20 bg-gray-900 text-gray-200 flex items-center justify-between'>
+    <div className='sticky top-0 z-50 '>
+        <div className='w-full h-20 bg-gray-900 text-gray-200 flex items-center justify-between '>
             <Link href={'/'}>
                 <div className='mx-10 flex items-center justify-center cursor-pointer'>
                     <Image

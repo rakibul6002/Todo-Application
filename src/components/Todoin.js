@@ -36,7 +36,7 @@ const TodoIn = () => {
      
     };
   return (
-    <div className='w-full h-screen bg-bg-img bg-cover'>
+    <div className='w-full min-h-screen bg-bg-img bg-cover'>
 
     <div className='h-auto py-48 w-full flex flex-col items-center justify-center'>
 
