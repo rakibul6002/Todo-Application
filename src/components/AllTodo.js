@@ -7,7 +7,7 @@ const AllTodo = () => {
     const {todosValue} = useSelector((state) => state.todo);
     const dispatch= useDispatch();
   return (
-    <div className='w-[500px] mx-auto my-8 min-h-screen '>
+    <div className='w-[500px]  mx-auto my-8  '>
         {
                     todosValue.length > 0 ? (
                         
