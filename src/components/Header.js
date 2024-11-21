@@ -18,17 +18,13 @@ const Header = () => {
                     priority
                     className='w-[60px] h-[50px]'
                     />
-                    <p className='mx-2 text-3xl font-semibold'>ToDo</p>
+                    <p className='mx-2 text-3xl font-semibold hidden md:block'>ToDo</p>
                 </div>
             </Link>
             <div>
-                <ul className='flex items-center justify-center gap-10 text-2xl cursor-pointer '>
+                <ul className='flex items-center justify-center gap-10 text-sm cursor-pointer pr-5 md:pr-0  '>
                     <Link href={'/'}>
                         <li className='hover:border-b-2 hover:border-red-600'>Home</li>
-                    </Link>
-
-                    <Link href={'/About'}>
-                        <li className='hover:border-b-2 hover:border-red-600'>About</li>
                     </Link>
 
                     <Link href={'/TodoIn'}>
@@ -38,17 +34,18 @@ const Header = () => {
                     <Link href={'/TodoList'}>
                         <li className='hover:border-b-2 hover:border-red-600'>Todo List</li>
                     </Link>
-                    <Link href={'/Help'}>
-                        <li className='hover:border-b-2 hover:border-red-600'>Help</li>
-                    </Link>
                 </ul>
             </div>
-            <div className='mx-10 cursor-pointer text-2xl flex items-center justify-center gap-3'>
+            <div className='mx-10 cursor-pointer text-2xl hidden md:flex items-center justify-center gap-3'>
                 <Link href={'/Log'}>
 
-                <button>Log In</button>
+                <button className='bg-blue-500 text-zinc-800 px-6 py-2 rounded-lg font-bold text-2xl hover:bg-blue-700 hover:text-white'>Sign In</button>
                 </Link>
-                <button>Sign Up</button>
+                <Link href={'/Sign'}>
+
+                <button className='bg-pink-600 text-zinc-800 px-6 py-2 rounded-lg font-bold text-2xl hover:bg-blue-700 hover:text-white'>Sign up</button>
+                </Link>
+                
             </div>
         </div>
         

@@ -44,13 +44,13 @@ const TodoIn = () => {
               <div className='flex items-center justify-center '>
                 <p className='text-4xl font-semibold text-gray-300'>ToDo Application</p>
               </div>
-              <div className='bg-gray-400 w-[500px] h-[300px] mx-auto mt-10 rounded flex flex-col items-center justify-center my-20'>
+              <div className='bg-gray-400  md:w-[500px] h-[300px] mx-auto mt-10 rounded flex flex-col items-center justify-center my-20'>
                 
                 
                   <input 
                       type="text" 
                       placeholder='Enter your text...' 
-                      className='w-[400px] h-[50px] rounded-xl px-8'
+                      className='w-[400px] h-[50px] rounded-xl px-8 '
                       onChange={(e) =>setTodoInput(e.target.value)}
                       value={todoInput}
                   />
